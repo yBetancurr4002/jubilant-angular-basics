@@ -1,0 +1,39 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2A0F45;
+  border-bottom: 2px solid #6A0DAD;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.4);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E0B0FF;
+    transition: color 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: #FF00FF;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: #E0B0FF;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &.active,
+      &:hover {
+        cursor: pointer;
+        color: #FF00FF;
+      }
+    }
+  }
+}
