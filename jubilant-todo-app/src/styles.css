@@ -1,18 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+/* Tema oscuro (por defecto) */
+/* styles.css */
+body.light-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --panel-color: #f5f5f5;
+  --table-header-color: #dcdcdc;
+  --hover-color: #ececec;
+}
+
+body.dark-theme {
+  --background-color: #1f1b2e;
+  --text-color: #ffffff;
+  --panel-color: #2a2a40;
+  --table-header-color: #6A0DAD;
+  --hover-color: #34195a;
+}
+
+
 * {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: radial-gradient(circle at top left, #181023, #0b0519);
-  color: #c3b3d8;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+.app-header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.theme-toggle-button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--text-color);
 }

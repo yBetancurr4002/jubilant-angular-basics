@@ -1,0 +1,8 @@
+:root.dark-theme {
+  --bg-color: #0b0519;
+  --bg-panel: #1a0b2e;
+  --text-color: #c3b3d8;
+  --accent-color: #6a0dad;
+  --primary-color: #e0b0ff;
+  --hover-color: #1f0b35;
+}

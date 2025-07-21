@@ -1,0 +1,27 @@
+/* Estructura base */
+.users-container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 Modo oscuro */
+.dark-theme .users-container {
+  background-color: #1a1a2e;
+  color: #f0e6ff;
+}
+
+/* ☀️ Modo claro */
+.light-theme .users-container {
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+
+/* Puedes agregar un borde o sombra si deseas separar visualmente el panel */
+.dark-theme .users-container {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.light-theme .users-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

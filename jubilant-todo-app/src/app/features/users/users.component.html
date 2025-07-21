@@ -1,1 +1,30 @@
-<p>users works!</p>
+<div class="users-container">
+  <button class="theme-toggle" (click)="toggleTheme()">🌗 Cambiar tema</button>
+
+  <aside class="sidebar">
+    <app-user-list (userSelected)="onUserSelected($event)"></app-user-list>
+  </aside>
+
+  <main class="tasks">
+    <h2 *ngIf="selectedUser">Tasks for {{ selectedUser.name }}</h2>
+
+    <table *ngIf="tasks.length > 0">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td>{{ task.title }}</td>
+          <td>{{ task.description }}</td>
+          <td>{{ task.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p *ngIf="selectedUser && tasks.length === 0">No tasks available.</p>
+  </main>
+</div>
